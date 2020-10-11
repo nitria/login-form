@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form form1" id="form">
+      <div class="user">
+        <label for="username">Username</label>
+        <input type="text" value="" id="username" required />
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="pass">
+        <label for="password">Password</label>
+        <input type="password" value="" id="password" required />
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <div class="eye" id="eye">
+          <i class="far fa-eye" id="fa-eye"></i>
+          <i class="far fa-eye-slash" id="fa-eye-slash"></i>
+        </div>
+      </div>
+      <div class="note"></div>
+      <input type="submit" value="Login" id="btn" class="btn" />
+      <a href="#" class="signup" onclick="toggleForm();">Sign Up</a>
+    </form>
+    <form class="form form2">
+      <div class="user">
+        <label for="username">Username</label>
+        <input type="text" value="" id="username" required />
+        <i class="fa fa-user" aria-hidden="true"></i>
+      </div>
+      <div class="pass">
+        <label for="password">Password</label>
+        <input type="password" value="" id="password" required />
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <div class="eye" id="eye">
+          <i class="far fa-eye" id="fa-eye"></i>
+          <i class="far fa-eye-slash" id="fa-eye-slash"></i>
+        </div>
+      </div>
+      <input type="submit" value="Sign Up" id="btn" class="btn" />
+      <a href="#" class="login" onclick="toggleForm();">Login</a>
+    </form>
+    <script src="index.js"></script>
+  </body>
+</html>

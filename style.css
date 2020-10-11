@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(45deg, #20bf55, #01baef);
+}
+
+body .form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  box-sizing: border-box;
+  padding: 30px 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4), 5px 5px 20px rgba(0, 0, 0, 0.4),
+    -5px -5px 10px rgba(0, 0, 0, 0.4), -5px -5px 20px rgba(0, 0, 0, 0.4);
+}
+
+body.active .form1 {
+  display: none;
+}
+
+body .form2 {
+  display: none;
+}
+
+body.active .form2 {
+  display: block;
+}
+
+.form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user,
+.pass {
+  position: relative;
+}
+
+label {
+  font-size: 30px;
+  font-family: fantasy;
+  color: #fff;
+}
+
+input {
+  padding: 5px 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+.fa {
+  position: absolute;
+  left: 20px;
+  top: 60%;
+  transform: translate(-50%);
+}
+input:focus ~ .fa {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 60%;
+  transform: translate(-50%);
+  cursor: pointer;
+}
+
+.fa-eye-slash {
+  display: none;
+}
+
+.btn {
+  font-size: 22px;
+  cursor: pointer;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #20bf55;
+}
+
+.signup,
+.login {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: fantasy;
+  transition: 0.3s;
+}
+
+.signup:hover,
+.login:hover {
+  text-decoration: underline;
+}
+
+.note {
+  color: #fff;
+  font-family: fantasy;
+}
